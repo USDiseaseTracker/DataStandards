@@ -7,12 +7,16 @@ permalink: /docs/data-technical-specs/
 
 ??? info "**Version 2.0.2** (updated 2026-08-04)"
     
+    - Updated repository/site references and links to use the DataStandards GitHub Pages path and repository name
+    - Renamed `USDiseaseTracker-Docs` references to US Disease Tracker Data Standards throughout the documentation
+
+    (Version 2.0.1)
     - Changed outcomes for Influenza-Associated Pediatric Mortality to "cases" (from "deaths")
     - Changed Perinatal Hepatitis B to require age groups (only one age group: "<2 y"), to maintain validation and system consistency
-    
-    - Updated field-level specifications to cover the expanded supported disease set.
-    - Clarified disease-specific valid values for `confirmation_status` and `disease_subtype`.
-    - Synchronized technical specs with current templates and data standards tooling behavior.
+
+    (Version 2.0.0)
+    - Added 7 new diseases: hepatitis A, acute hepatitis B, perinatal hepatitis B, mumps, mpox, varicella, and influenza-associated pediatric mortality
+    - Added `disease_metadata.csv` in `examples-and-templates` with condition-specific metadata details
 
 ---
 

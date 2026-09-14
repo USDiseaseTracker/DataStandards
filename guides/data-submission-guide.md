@@ -13,10 +13,10 @@ permalink: /docs/data-submission-guide/
     (Version 2.0.1)
     - Changed outcomes for Influenza-Associated Pediatric Mortality to "cases" (from "deaths")
     - Changed Perinatal Hepatitis B to require age groups (only one age group: "<2 y"), to maintain validation and system consistency
-    
-    - Added guidance for the expanded disease set now supported by the reporting standards.
-    - Updated aggregation expectations for newly supported diseases and their applicable dimensions.
-    - Aligned submission guidance with current metadata and validation references.
+
+    (Version 2.0.0)
+    - Added 7 new diseases: hepatitis A, acute hepatitis B, perinatal hepatitis B, mumps, mpox, varicella, and influenza-associated pediatric mortality
+    - Added `disease_metadata.csv` in `examples-and-templates` with condition-specific metadata details
 
 ---
 
