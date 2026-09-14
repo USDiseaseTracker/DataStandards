@@ -13,10 +13,10 @@ permalink: /docs/validation/
     (Version 2.0.1)
     - Changed outcomes for Influenza-Associated Pediatric Mortality to "cases" (from "deaths")
     - Changed Perinatal Hepatitis B to require age groups (only one age group: "<2 y"), to maintain validation and system consistency
-    
-    - Updated validation references to reflect the current supported disease set.
-    - Clarified disease-specific cross-field expectations for `confirmation_status` and `disease_subtype`.
-    - Aligned validation guidance language with current standards and templates.
+
+    (Version 2.0.0)
+    - Added 7 new diseases: hepatitis A, acute hepatitis B, perinatal hepatitis B, mumps, mpox, varicella, and influenza-associated pediatric mortality
+    - Added `disease_metadata.csv` in `examples-and-templates` with condition-specific metadata details
 
 
 ---
@@ -98,4 +98,3 @@ For each combination of `(report_period_start, report_period_end, disease_name, 
 - **Diseases with subtype breakdown** (`meningococcus`): the sum of state-level age breakdown rows (`disease_subtype = "total"`) must equal the sum of state-level subtype breakdown rows (`age_group = "total"`), and both must equal the sum of sub-state rows
 - **All other diseases**: the sum of state-level rows must equal the sum of sub-state rows
 - International resident rows (`geo_name = "international resident"`) are excluded from all count total checks
-
