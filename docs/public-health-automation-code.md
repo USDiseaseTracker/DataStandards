@@ -1,6 +1,6 @@
 # Public Health Automation Code
 
-This section contains the R automation script used to clean and transform disease-tracking data for USDT reporting workflows.
+This page links to the restored R automation script used to clean and transform disease-tracking data for USDT reporting workflows.
 
 ## Script
 
