@@ -4,7 +4,7 @@ This section contains the R automation script used to clean and transform diseas
 
 ## Script
 
-- [`USDT_File_cleaning.R`](../public-health-automation/USDT_File_cleaning.R)
+- [`USDT_File_cleaning.R`](https://github.com/USDiseaseTracker/DataStandards/blob/main/public-health-automation/USDT_File_cleaning.R)
 
 ## What it does
 
