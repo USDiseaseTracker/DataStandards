@@ -63,6 +63,7 @@ nav:
     - Pilot Overview: guides/pilot-overview.md
   - Tools:
     - Data Standards Tool: data-standards-tool.md
+    - Public Health Automation Code: public-health-automation-code.md
   - Examples & Templates: examples-and-templates.md
   - Contributing: CONTRIBUTING.md
 
