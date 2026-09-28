@@ -14,7 +14,7 @@ The R code takes an input file, modifies field names, cleans the data, and expor
    1. Open up the Metadata file
    2. Download and install RStudio
    a. RStudio Basics can be found here:
-   3. Open up USDT_File_cleaningV#.R
+   3. Open up usdt_file_cleaning.R
     <br>
 ##### 1. Open up the Metadata file
  - **Variable tab:** Fill in the column, EDSS_name, with the column header that best aligns from the PHA's input file. If you do not have an input column that matches, leave the EDSS_name cell blank. EXCEPTION: 'Episode date' is not a USDT variable. However, if your jursidiction includes only one date field that then needs to be translated to MMWR start and end dates, place the column header for the date field here in the EDSS_name column.
@@ -30,6 +30,6 @@ The R code takes an input file, modifies field names, cleans the data, and expor
    RStudio https://posit.co/downloads
    Check with your agency if this is available through a localized software center
 
-##### 3. Open up USDT_File_CleaningV#.R
+##### 3. Open up usdt_file_cleaning.R
 
    Once RStudio is installed, open up the file and run the first line of code "install.packages("tidyverse", "svDialogs", "readr", "MMWRweek","lubridate", "readxl","plyr","dplyr", "sqldf")" This will install all required libraries that will allow the R code to run appropriately.
