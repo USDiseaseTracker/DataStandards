@@ -50,7 +50,7 @@ When using this template, rename the file following the pattern:
 ```
 disease_tracking_report_{jurisdiction}_{report_date}.csv
 ```
-Replace `{jurisdiction}` with your jurisdiction's two-letter abbreviation and put the `{report_date}` in YYYY-MM-DD format (e.g., disease_tracking_report_WA_2026-02-09.csv).
+Replace `{jurisdiction}` with your jurisdiction's two-letter abbreviation and put the `{report_date}` in YYYY-MM-DD format (e.g., `disease_tracking_report_WA_2026-02-09.csv`).
 
 ### Recommended Steps
 1. Download the template file: [`disease_tracking_report_{jurisdiction}_{report_date}.csv`](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/(state)_jurisdictions-EXAMPLE.csv).
