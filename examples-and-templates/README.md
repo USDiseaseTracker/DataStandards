@@ -34,7 +34,7 @@ Replace `{jurisdiction}` with your jurisdiction's two-letter abbreviation (e.g.,
 Example files are provided to demonstrate the required format and structure of compliant disease tracking reports.
 ### Available Templates
 This template file includes all required headers with correct field structure for data submission.
-- [`disease_tracking_report_{jurisdiction}_{report_date}.csv`](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/(state)_jurisdictions-EXAMPLE.csv)
+- [`disease_tracking_report_{jurisdiction}_{report_date}.csv`](disease_tracking_report_{jurisdiction}_{report_date}.csv)
 ### Supporting Guidance And Report Examples
 The [annotated guidance](USDT_Annotated_Guidance_20260918.pdf) is a comprehensive onboarding and reference resource that walks jurisdictions through the USDT reporting process. It includes explanations, examples, and visual illustrations to help users understand reporting requirements, metadata configuration, data submission standards, and other key concepts needed to successfully participate in USDT.
 
@@ -53,7 +53,7 @@ disease_tracking_report_{jurisdiction}_{report_date}.csv
 Replace `{jurisdiction}` with your jurisdiction's two-letter abbreviation and put the `{report_date}` in YYYY-MM-DD format (e.g., `disease_tracking_report_WA_2026-02-09.csv`).
 
 ### Recommended Steps
-1. Download the template file: [`disease_tracking_report_{jurisdiction}_{report_date}.csv`](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/(state)_jurisdictions-EXAMPLE.csv).
+1. Download the template file: [`disease_tracking_report_{jurisdiction}_{report_date}.csv`](disease_tracking_report_{jurisdiction}_{report_date}.csv).
 2. Fill in your jurisdiction's data following the field specifications.
 3. Rename the file using the naming convention above.
 4. Submit the file using one of the transfer methods described in the [Data Transfer Guide](../guides/data-transfer-guide.md).
