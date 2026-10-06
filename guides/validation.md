@@ -5,8 +5,11 @@ permalink: /docs/validation/
 
 # Validation
 
-??? info "**Version 2.0.2** (updated 2026-08-04)"
+??? info "**Version 2.0.3** (updated 2026-10-06)"
 
+    - Removed the jurisdiction geography CSV example as part of the transition to a single jurisdiction metadata file in YAML format
+
+    (Version 2.0.2)
     - Updated repository/site references and links to use the DataStandards GitHub Pages path and repository name
     - Renamed `USDiseaseTracker-Docs` references to US Disease Tracker Data Standards throughout the documentation
 
@@ -98,4 +101,3 @@ For each combination of `(report_period_start, report_period_end, disease_name, 
 - **Diseases with subtype breakdown** (`meningococcus`): the sum of state-level age breakdown rows (`disease_subtype = "total"`) must equal the sum of state-level subtype breakdown rows (`age_group = "total"`), and both must equal the sum of sub-state rows
 - **All other diseases**: the sum of state-level rows must equal the sum of sub-state rows
 - International resident rows (`geo_name = "international resident"`) are excluded from all count total checks
-

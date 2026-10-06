@@ -5,8 +5,11 @@ permalink: /docs/data-transfer-guide/
 
 # Data Transfer Guide
 
-??? info "**Version 2.0.2** (updated 2026-08-04)"
+??? info "**Version 2.0.3** (updated 2026-10-06)"
     
+    - Removed the jurisdiction geography CSV example as part of the transition to a single jurisdiction metadata file in YAML format
+
+    (Version 2.0.2)
     - Updated repository/site references and links to use the DataStandards GitHub Pages path and repository name.
     - Renamed `USDiseaseTracker-Docs` references to US Disease Tracker Data Standards throughout the documentation.
     
