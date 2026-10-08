@@ -27,7 +27,7 @@ The goal of the US Disease Tracker is to provide consolidated epidemiologically 
 
 Data are reported by jurisdictions to USDT <u>weekly on Thursdays</u>, with <u>new data published on Fridays</u>.
 
-**Note**: Data are not yet public for USDT. When data become public, [usdiseasetracker.org](usdiseasetracker.org) will be redirected to the dashboard, rather than this documentation website.
+**Note**: USDT data are now publicly available at [usdiseasetracker.org](https://usdiseasetracker.org). This data standards documentation is hosted separately at [usdiseasetracker.github.io/DataStandards](https://usdiseasetracker.github.io/DataStandards/).
 
 
 ---
