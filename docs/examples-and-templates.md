@@ -50,18 +50,6 @@ This example demonstrates:
 Note: These data were generated from available data at the state-level from NNDSS, with age and county counts simulated using population size to define probability sampling.
 
 
-### Example Juridiction Geographies File
-
-An example format for sharing sub-jurisdiction geographies, particularly for jurisdictions reporting sub-jurisdiction geographies other than county:
-
-**📄 [Jurisdiction specification example](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/ID_jurisdictions.csv)**
-
-This example demonstrates:
-
-- Proper formatting for each field
-- Combination of counties into a region geography
-
-
 ## Reference Materials
 
 

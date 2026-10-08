@@ -5,8 +5,11 @@ permalink: /docs/data-submission-guide/
 
 # Data Submission Guide
 
-??? info "**Version 2.0.2** (updated 2026-08-04)"
+??? info "**Version 2.0.3** (updated 2026-10-06)"
     
+    - Removed the jurisdiction geography CSV example as part of the transition to a single jurisdiction metadata file in YAML format
+
+    (Version 2.0.2)
     - Updated repository/site references and links to use the DataStandards GitHub Pages path and repository name
     - Renamed `USDiseaseTracker-Docs` references to US Disease Tracker Data Standards throughout the documentation
 
@@ -323,7 +326,6 @@ Data should be submitted in CSV format following the standard template structure
 
 - [Data submission template](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/disease_tracking_report_{jurisdiction}_{report_date}.csv) - Empty template with correct field structure
 - [Example data file](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/disease_tracking_report_CA-SIMULATED-EXAMPLE_2026-02-09.csv) - Sample data demonstrating proper format
-- [Jurisdiction specification example](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/ID_jurisdictions.csv) - Example format for sharing sub-jurisdiction geographies, particularly for jurisdictions reporting geographies other than county.
 
 **File Submission Requirements:**
 
