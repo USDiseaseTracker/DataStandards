@@ -16,10 +16,10 @@ permalink: /docs/validation/
     (Version 2.0.1)
     - Changed outcomes for Influenza-Associated Pediatric Mortality to "cases" (from "deaths")
     - Changed Perinatal Hepatitis B to require age groups (only one age group: "<2 y"), to maintain validation and system consistency
-    
-    - Updated validation references to reflect the current supported disease set.
-    - Clarified disease-specific cross-field expectations for `confirmation_status` and `disease_subtype`.
-    - Aligned validation guidance language with current standards and templates.
+
+    (Version 2.0.0)
+    - Added 7 new diseases: hepatitis A, acute hepatitis B, perinatal hepatitis B, mumps, mpox, varicella, and influenza-associated pediatric mortality
+    - Added `disease_metadata.csv` in `examples-and-templates` with condition-specific metadata details
 
 
 ---

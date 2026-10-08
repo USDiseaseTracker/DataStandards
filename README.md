@@ -8,19 +8,17 @@
 
     (Version 2.0.2)
     - Updated repository/site references and links to use the DataStandards GitHub Pages path and repository name
-    - Renamed US Disease Tracker Data Standards references to US Disease Tracker Data Standards throughout the documentation
+    - Renamed `USDiseaseTracker-Docs` references to US Disease Tracker Data Standards throughout the documentation
 
-    (Version 2.0.1)
-    - Changed outcomes for Influenza-Associated Pediatric Mortality to "cases" (from "deaths")
-    - Changed Perinatal Hepatitis B to require age groups (only one age group: "<2 y"), to maintain validation and system consistency
+(Version 2.0.1)
+- Changed outcomes for Influenza-Associated Pediatric Mortality to "cases" (from "deaths")
+- Changed Perinatal Hepatitis B to require age groups (only one age group: "<2 y"), to maintain validation and system consistency
 
-    (Version 2.0.0)
-    - Added 7 new diseases: 
-        - New conditions: hepatitis A, acute hepatitis B, perinatal hepatitis B, mumps, mpox, varicella, influenza-associated pediatric mortality 
-        - Original conditions: measles, pertussis, invasive meningoccoccal disease
-    - Added `disease_metadata.csv` file in `examples-and-templates` that details the specifics of each condition
+(Version 2.0.0)
+- Added 7 new diseases: hepatitis A, acute hepatitis B, perinatal hepatitis B, mumps, mpox, varicella, and influenza-associated pediatric mortality
+- Added `disease_metadata.csv` in `examples-and-templates` with condition-specific metadata details
 
-    
+
 
 
 ---
