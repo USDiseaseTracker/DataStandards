@@ -19,7 +19,7 @@ The standard template file includes all required headers with correct field stru
 
 ### Annotated Guidance
 
-The annotated guidance is a comprehensive onboarding and reference resource that walks jurisdictions through the USDT reporting process. It includes explanations, examples, and visual illustrations to help users understand reporting requirements, metadata configuration, data submission standards, and other key concepts needed to successfully participate in USDT. 
+The [annotated guidance](../examples-and-templates/USDT_Annotated_Guidance_20260918.pdf) is a comprehensive onboarding and reference resource that walks jurisdictions through the USDT reporting process. It includes explanations, examples, and visual illustrations to help users understand reporting requirements, metadata configuration, data submission standards, and other key concepts needed to successfully participate in USDT. 
 
 ### Example Disease Tracking Reports
 
@@ -56,7 +56,7 @@ When using this template, rename it with your jurisdiction's two-letter abbrevia
 
 ### Supporting Guidance
 
-The metadata guidance provides detailed instructions for completing the jurisdiction reporting metadata YAML file used by USDT. It explains how to:
+The [metadata guidance](../examples-and-templates/Metadata_Guidance_Final_20260901.pdf) provides detailed instructions for completing the jurisdiction reporting metadata YAML file used by USDT. It explains how to:
 -	Document reporting practices and frequency
 -	Detail which diseases are included in your data file
 -	Define your geographic reporting structures
