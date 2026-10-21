@@ -11,15 +11,17 @@ The resources on this page are provided to help users prepare and submit a valid
 -	Utilize additional resources to ensure data matches the appropriate USDT format.
 -	Validate either by uploading a file to check for errors or using the Schema Files.
 
+## Annotated Guidance
+
+The [Annotated Guidance](../examples-and-templates/USDT_Annotated_Guidance_20260918.pdf) is a comprehensive onboarding and reference resource that walks jurisdictions through the USDT reporting process. It includes explanations, examples, and visual illustrations to help users understand reporting requirements, metadata configuration, data submission standards, and other key concepts needed to successfully participate in USDT. 
+
 ## Disease Tracking Report
 
 The standard template file includes all required headers with correct field structure for submitting disease tracking data:
 
 **📄 [disease_tracking_report_{jurisdiction}_{report_date}.csv](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/disease_tracking_report_{jurisdiction}_{report_date}.csv)**
 
-### Annotated Guidance
 
-The [annotated guidance](../examples-and-templates/USDT_Annotated_Guidance_20260918.pdf) is a comprehensive onboarding and reference resource that walks jurisdictions through the USDT reporting process. It includes explanations, examples, and visual illustrations to help users understand reporting requirements, metadata configuration, data submission standards, and other key concepts needed to successfully participate in USDT. 
 
 ### Example Disease Tracking Reports
 
@@ -28,7 +30,7 @@ The following are examples that can be used to understand the structure of compl
 - Proper formatting for each field
 - Multiple disease entries
 - Different stratification levels
-- Age group and demographic data
+- Age group data
 - Suppressed data handling
 
 **📄 [disease_tracking_report_CA-SIMULATED-EXAMPLE_2026-02-09.csv](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/disease_tracking_report_CA-SIMULATED-EXAMPLE_2026-02-09.csv)**
@@ -125,9 +127,9 @@ This crosswalk helps you:
 
 ## Related Guides
 
-- [Data Technical Specifications](guides/data-technical-specs.md) - Detailed field requirements
-- [Data Submission Guide](guides/data-submission-guide.md) - Submission process
-- [Validation Rules](guides/validation.md) - Validation requirements
+- [Data Technical Specifications](../guides/data-technical-specs.md) - Detailed field requirements
+- [Data Submission Guide](../guides/data-submission-guide.md) - Submission process
+- [Validation Rules](../guides/validation.md) - Validation requirements
 - [Data Standards Tool](data-standards-tool.md) - Interactive tool
 
 ---
