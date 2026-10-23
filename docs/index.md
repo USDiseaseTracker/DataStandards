@@ -2,19 +2,21 @@
 
 Welcome to the US Disease Tracker Data Standards site. This repository houses the data standards, templates, examples, and validation documentation for the US Disease Tracker project.
 
-??? info "Version 2.0.2 (updated 2026-08-04)"
+??? info "Version 2.0.3 (updated 2026-10-06)"
     
+    - Removed the jurisdiction geography CSV example as part of the transition to a single jurisdiction metadata file in YAML format
+
+    (Changed in Version 2.0.2)
     - Updated repository/site references and links to use the DataStandards GitHub Pages path and repository name
     - Renamed `USDiseaseTracker-Docs` references to US Disease Tracker Data Standards throughout the documentation
 
-    (Changed in Version 2.0.1)
+    (Version 2.0.1)
     - Changed outcomes for Influenza-Associated Pediatric Mortality to "cases" (from "deaths")
     - Changed Perinatal Hepatitis B to require age groups (only one age group: "<2 y"), to maintain validation and system consistency
 
-    (Changed in Version 2.0.0)
-    - Expanded supported diseases across documentation, templates, and the data standards tool.
-    - Updated disease-specific validation guidance for `confirmation_status` and `disease_subtype`.
-    - Harmonized metadata and dictionary values for the newly supported diseases.
+    (Version 2.0.0)
+    - Added 7 new diseases: hepatitis A, acute hepatitis B, perinatal hepatitis B, mumps, mpox, varicella, and influenza-associated pediatric mortality
+    - Added `disease_metadata.csv` in `examples-and-templates` with condition-specific metadata details
 
 
 ---
@@ -25,7 +27,10 @@ The goal of the US Disease Tracker is to provide consolidated epidemiologically 
 
 Data are reported by jurisdictions to USDT <u>weekly on Thursdays</u>, with <u>new data published on Fridays</u>.
 
-**Note**: Data are not yet public for USDT. When data become public, [usdiseasetracker.org](usdiseasetracker.org) will be redirected to the dashboard, rather than this documentation website.
+
+Public Dashboard: [usdiseasetracker.org](usdiseasetracker.org)
+
+Full Data: [USDT Data Repo](https://github.com/USDiseaseTracker/USDT)
 
 
 ---
@@ -76,7 +81,6 @@ Our **Key Principles** are:
 - [Data submission template](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/disease_tracking_report_{jurisdiction}_{report_date}.csv)
 - [Example data file](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/disease_tracking_report_CA-SIMULATED-EXAMPLE_2026-02-09.csv)
 - [Data dictionary (CSV)](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/disease_tracking_data_dictionary.csv) - Reference table of all fields and valid values
-- [Jurisdiction specification example](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/ID_jurisdictions.csv) - Example format for sharing sub-jurisdiction geographies, particularly for jurisdictions reporting geographies other than county.
 ---
 
 ## Data Validation

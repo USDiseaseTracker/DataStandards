@@ -5,18 +5,21 @@ permalink: /docs/validation/
 
 # Validation
 
-??? info "**Version 2.0.2** (updated 2026-08-04)"
+??? info "**Version 2.0.3** (updated 2026-10-06)"
 
+    - Removed the jurisdiction geography CSV example as part of the transition to a single jurisdiction metadata file in YAML format
+
+    (Version 2.0.2)
     - Updated repository/site references and links to use the DataStandards GitHub Pages path and repository name
     - Renamed `USDiseaseTracker-Docs` references to US Disease Tracker Data Standards throughout the documentation
 
     (Version 2.0.1)
     - Changed outcomes for Influenza-Associated Pediatric Mortality to "cases" (from "deaths")
     - Changed Perinatal Hepatitis B to require age groups (only one age group: "<2 y"), to maintain validation and system consistency
-    
-    - Updated validation references to reflect the current supported disease set.
-    - Clarified disease-specific cross-field expectations for `confirmation_status` and `disease_subtype`.
-    - Aligned validation guidance language with current standards and templates.
+
+    (Version 2.0.0)
+    - Added 7 new diseases: hepatitis A, acute hepatitis B, perinatal hepatitis B, mumps, mpox, varicella, and influenza-associated pediatric mortality
+    - Added `disease_metadata.csv` in `examples-and-templates` with condition-specific metadata details
 
 
 ---
@@ -98,4 +101,3 @@ For each combination of `(report_period_start, report_period_end, disease_name, 
 - **Diseases with subtype breakdown** (`meningococcus`): the sum of state-level age breakdown rows (`disease_subtype = "total"`) must equal the sum of state-level subtype breakdown rows (`age_group = "total"`), and both must equal the sum of sub-state rows
 - **All other diseases**: the sum of state-level rows must equal the sum of sub-state rows
 - International resident rows (`geo_name = "international resident"`) are excluded from all count total checks
-
