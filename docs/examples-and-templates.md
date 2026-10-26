@@ -1,24 +1,48 @@
 # Examples & Templates
 
-This section provides templates, examples, and reference materials to help you prepare and submit data.
+This section provides templates, examples, guidance documents and reference materials to help jurisdictions prepare and submit USDT data files.
 
-## Data Templates
+## How to Use These Resources
 
-### CSV Submission Template
+The resources on this page are provided to help users prepare and submit a valid USDT data file.
+-	Review the Annotated Guidance to understand USDT reporting requirements and the submission process.
+-	Download the Disease Tracking Report template and example data files to understand the required data structure and format.
+-	Complete the Jurisdiction Reporting Metadata Template with your jurisdiction’s information, including geographic units.
+-	Utilize additional resources to ensure data matches the appropriate USDT format.
+-	Validate either by uploading a file to check for errors or using the Schema Files.
 
-The standard template for submitting disease tracking data:
+## Annotated Guidance
+
+The [Annotated Guidance](../examples-and-templates/USDT_Annotated_Guidance_20260918.pdf) is a comprehensive onboarding and reference resource that walks jurisdictions through the USDT reporting process. It includes explanations, examples, and visual illustrations to help users understand reporting requirements, metadata configuration, data submission standards, and other key concepts needed to successfully participate in USDT. 
+
+## Disease Tracking Report
+
+The standard template file includes all required headers with correct field structure for submitting disease tracking data:
 
 **📄 [disease_tracking_report_{jurisdiction}_{report_date}.csv](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/disease_tracking_report_{jurisdiction}_{report_date}.csv)**
 
-This template includes:
-
-- All required column headers
-- Placeholder values showing the expected format
-- Comments explaining each field
 
 
-### Jurisdiction Metadata Template
+### Example Disease Tracking Reports
 
+The following are examples that can be used to understand the structure of compliant data and train users on data standards.
+
+- Proper formatting for each field
+- Multiple disease entries
+- Different stratification levels
+- Age group data
+- Suppressed data handling
+
+**📄 [disease_tracking_report_CA-SIMULATED-EXAMPLE_2026-02-09.csv](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/disease_tracking_report_CA-SIMULATED-EXAMPLE_2026-02-09.csv)**
+
+**📄 [disease_tracking_report_WA-SIMULATED-EXAMPLE_2026-02-09.csv](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/disease_tracking_report_WA-SIMULATED-EXAMPLE_2026-02-09.csv)**
+
+Note: These data were generated from available data at the state-level from NNDSS, with age and county counts simulated using population size to define probability sampling.
+
+## Jurisdiction Reporting Metadata Template
+
+Before submission of USDT data files, jurisdictions must complete the metadata template. The file provides information on reporting practices, geographic structures, suppression policies, and points of contact that are necessary for interpreting and validating submitted data.
+Updated metadata files should be submitted each time there is a change in the jurisdiction’s data submission.
 The template for submitting required metadata about your jurisdiction's data:
 
 **📄 [disease-tracking-metadata-{jurisdiction}.yaml](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/disease-tracking-metadata-{jurisdiction}.yaml)**
@@ -32,26 +56,46 @@ This template includes:
 
 When using this template, rename it with your jurisdiction's two-letter abbreviation (e.g., `disease-tracking-metadata-WA.yaml`).
 
+### Supporting Guidance
 
-### Example Data File
+The [metadata guidance](../examples-and-templates/Metadata_Guidance_Final_20260901.pdf) provides detailed instructions for completing the jurisdiction reporting metadata YAML file used by USDT. It explains how to:
+-	Document reporting practices and frequency
+-	Detail which diseases are included in your data file
+-	Define your geographic reporting structures
+-	Describe your data suppression and data lag policies
+-	Designate jurisdictional contacts
 
-A complete example showing simulated data that reflect what submitted data would look like:
+## Schema Files
 
-**📄 [disease_tracking_report_CA-SIMULATED-EXAMPLE_2026-02-09.csv](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/disease_tracking_report_CA-SIMULATED-EXAMPLE_2026-02-09.csv)**
+A schema is used to define the structure of a valid, correctly formatted file by stating certain characteristics of the data elements within it. Use of a schema can help identify data formatting issues that need to be addressed prior to submission.
 
-This example demonstrates:
+### YAML Schema
 
-- Proper formatting for each field
-- Multiple disease entries
-- Different stratification levels
-- Age group and demographic data
-- Suppressed data handling
+The formal YAML schema defining the data structure:
 
-Note: These data were generated from available data at the state-level from NNDSS, with age and county counts simulated using population size to define probability sampling.
+**📄 [data_reporting_schema.yaml](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/data_reporting_schema.yaml)**
 
+Use this schema for:
+
+- Automated validation
+- Integration with validation tools
+- Understanding field relationships
+- Building your own tools
+
+### Python Schema
+
+The Python Pydantic schema used for validation:
+
+**📄 [data_reporting_schema.py](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/data_reporting_schema.py)**
+
+This schema includes:
+
+- Field definitions with types
+- Validation logic
+- Custom validators
+- Helper functions
 
 ## Reference Materials
-
 
 ### Data Dictionary
 
@@ -81,52 +125,11 @@ This crosswalk helps you:
 - Plan your reporting schedule
 
 
-## Schema Files
-
-
-### YAML Schema
-
-The formal YAML schema defining the data structure:
-
-**📄 [data_reporting_schema.yaml](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/data_reporting_schema.yaml)**
-
-Use this schema for:
-
-- Automated validation
-- Integration with validation tools
-- Understanding field relationships
-- Building your own tools
-
-
-### Python Schema
-
-The Python Pydantic schema used for validation:
-
-**📄 [data_reporting_schema.py](https://github.com/USDiseaseTracker/DataStandards/blob/main/examples-and-templates/data_reporting_schema.py)**
-
-This schema includes:
-
-- Field definitions with types
-- Validation logic
-- Custom validators
-- Helper functions
-
-
-## How to Use These Resources
-
-1. **Start with the Templates**: Download the CSV template and metadata template to understand the structure
-2. **Review the Example**: Look at the example data file to see proper formatting
-3. **Complete Metadata**: Fill out the metadata template with your jurisdiction's information
-4. **Consult the Data Dictionary**: Use this as your primary reference for field specifications
-5. **Validate with Schema**: Use the JSON or Python schema to validate your data
-6. **Check MMWR Crosswalk**: Reference this when converting dates to MMWR weeks
-
-
 ## Related Guides
 
-- [Data Technical Specifications](guides/data-technical-specs.md) - Detailed field requirements
-- [Data Submission Guide](guides/data-submission-guide.md) - Submission process
-- [Validation Rules](guides/validation.md) - Validation requirements
+- [Data Technical Specifications](../guides/data-technical-specs.md) - Detailed field requirements
+- [Data Submission Guide](../guides/data-submission-guide.md) - Submission process
+- [Validation Rules](../guides/validation.md) - Validation requirements
 - [Data Standards Tool](data-standards-tool.md) - Interactive tool
 
 ---
