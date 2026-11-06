@@ -2,8 +2,12 @@
 
 📖 **[View this documentation as a website](https://usdiseasetracker.github.io/DataStandards/)**
 
-**Version 2.0.3 (updated 2026-10-06)**
+**Version 2.0.4 (updated 2026-11-06)**
 
+    - Clarified required age-group, sub-jurisdiction, and meningococcal serogroup stratifications, including count consistency and reporting counts as `unspecified` when needed
+    - Clarified geographic unit rules, including `geo_unit = "NA"` for international residents only, and expanded disease subtype guidance and valid meningococcal serogroups
+
+    (Version 2.0.3)
     - Removed the jurisdiction geography CSV example as part of the transition to a single jurisdiction metadata file in YAML format
 
     (Version 2.0.2)

@@ -5,8 +5,12 @@ permalink: /docs/data-submission-guide/
 
 # Data Submission Guide
 
-??? info "**Version 2.0.3** (updated 2026-10-06)"
+??? info "**Version 2.0.4** (updated 2026-11-06)"
     
+    - Clarified required age-group, sub-jurisdiction, and meningococcal serogroup stratifications, including count consistency and reporting counts as `unspecified` when needed
+    - Clarified geographic unit rules, including `geo_unit = "NA"` for international residents only, and expanded disease subtype guidance and valid meningococcal serogroups
+
+    (Version 2.0.3)
     - Removed the jurisdiction geography CSV example as part of the transition to a single jurisdiction metadata file in YAML format
 
     (Version 2.0.2)
@@ -87,11 +91,16 @@ This guide provides detailed specifications for health departments participating
 
 ### Required Data Stratifications
 
-Disease counts for different breakdowns are collected separately (e.g., age, sub-jurisdiction, disease subtype, etc.). We call these versions of the data the "data stratifications". Each data stratification should provide complete data from December 29, 2024 through the present, with each having equivalent total counts over time (e.g., cumulative measles cases in the age group stratification must equal cumulative measles cases in the sub-jurisdiction stratification). For each stratification, the counts by time period (i.e., week, cumulative) should sum to the equivalent time period for the full jurisdication (e.g., the sum of county-level cases of measles for state Y should equal the number of total cases in state Y for all time points); data suppression should not result in underreporting through use of "unspecified" strata (see [Data Suppression](#data-suppression)). See [Case Classification by Time](#case-classification-by-time) below for details on assignment of cases to time periods. Only the data stratifications listed below will be accepted; new stratifications will be added as needed for new demographics, diseases, conditions or outcomes, etc.
+Disease counts for different breakdowns are collected separately (e.g., age, sub-jurisdiction, disease subtype, etc.). We call these versions of the data the "data stratifications". Currently, age-group and sub-jurisdiction stratifications are required for all conditions, plus serogroup stratification for invasive meningicoccal disease. Each data stratification must provide complete data from December 29, 2024 through the present, with each having equivalent total counts by time period and cumulatively (e.g., cumulative measles cases in the age group stratification must equal cumulative measles cases in the sub-jurisdiction stratification, and the sum of county-level cases of measles for state Y should equal the number of total cases in state Y for all time points). 
+
+Data suppression policies should be addressed by utilizing the "unspecified" strata. All the data stratifications listed below are required, and only these will be accepted. Do not drop counts or stratifications. If a jurisdiction is not reporting counts for a specific stratification (e.g., serogroup for invasive meningicoccal disease), the stratification must still be reported, but using "unspecified" (e.g., serogroup = "unspecified"). See the [Data Suppression](#data-suppression) instructions to ensure complete reporting. See [Case Classification by Time](#case-classification-by-time) below for details on assignment of cases to time periods. 
 
 !!! info "Important"
     
-    All stratifications must sum to the same count (by time period and total). This sum should be equivalent to the jurisdication-level count for that time period. Do not drop counts in reporting. Follow [Data Suppression](#data-suppression) instructions to ensure complete reporting.
+    1. All stratifications listed below must be submitted by all jurisdictions. Currently this includes age group and sub-jurisdiction counts, plus serogroup counts for invasive meningicoccal disease.
+    2. All stratifications must sum to the same count (by time period and total) within a condition. This sum should be equivalent to the jurisdication-level count for that time period. 
+    
+
 
 <br>
 
