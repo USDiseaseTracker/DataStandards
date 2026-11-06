@@ -91,7 +91,10 @@ Disease counts for different breakdowns are collected separately (e.g., age, sub
 
 !!! info "Important"
     
-    All stratifications must sum to the same count (by time period and total). This sum should be equivalent to the jurisdication-level count for that time period. Do not drop counts in reporting. Follow [Data Suppression](#data-suppression) instructions to ensure complete reporting.
+    1. All stratifications listed below must be submitted by all jurisdictions.
+    2. All stratifications must sum to the same count (by time period and total) within a condition. This sum should be equivalent to the jurisdication-level count for that time period. 
+    
+    Do not drop counts in reporting.  If a jurisdiction is not reporting counts for a specific stratification (e.g., serogroup for invasive meningicoccal disease), the stratification still must be reported, but using "unspecified" (e.g., serogroup = "unspecified"). See the [Data Suppression](#data-suppression) instructions to ensure complete reporting.
 
 <br>
 
