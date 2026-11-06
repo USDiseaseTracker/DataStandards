@@ -145,12 +145,14 @@ Only include rows with non-zero counts. The system will automatically infer zero
 - Measles, Hepatitis A, Perinatal Hepatitis B, and Influenza-Associated Pediatric Mortality: Use `confirmed` only
 - Pertussis, Meningococcus, Acute Hepatitis B, Mumps, Mpox, and Varicella: Use `confirmed and probable`
 - Additional outcomes (hospitalizations) planned for future
-  <br>
+
+<br>
+  
 - *Disease Subtype* is currently accepted at jurisdiction level only (not sub-jurisdiction)
-  - Currently only use for meningococcal disease serogroup reporting
-  - Use `total` for non-subtype-stratified aggregations and for diseases without subtype reporting (all except `disease_name = "meningococcus"`)
-  - Use `unknown` when subtyping was not performed or is otherwise not known (only for disease_subtype aggregations)
-  - Use `unspecified` when subtype is known but suppressed
+    - Currently only use for meningococcal disease serogroup reporting
+    - Use `total` for non-subtype-stratified aggregations and for diseases without subtype reporting (all except `disease_name = "meningococcus"`)
+    - Use `unknown` when subtyping was not performed or is otherwise not known (only for disease_subtype aggregations)
+    - Use `unspecified` when subtype is known but suppressed
 
 <br>
 
