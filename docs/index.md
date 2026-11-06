@@ -41,10 +41,10 @@ Full Data: [USDT Data Repo](https://github.com/USDiseaseTracker/USDT)
 
 Our **Key Principles** are:
 
-1. Provision of data is voluntary.
-2. Only aggregate data will be collected to minimize the risk of reidentification.
-3. Data are be updated and back-populated on a regular basis, acknowledging that recent data may be incomplete as investigations proceed. Records of prior versions will be maintained.
-4. We do not suppress or manipulate data once received; jurisdictions should submit data in manner in accordance with heir data release policies.
+1. Only aggregate data will be collected to minimize the risk of reidentification.
+2. Data are be updated and back-populated on a regular basis, acknowledging that recent data may be incomplete as investigations proceed. Records of prior versions will be maintained.
+3. We do not suppress or manipulate data once received; jurisdictions should submit data in manner in accordance with heir data release policies.
+4. The data standards have been designed to remove uncertainty around missingness and suppression; all counts are always to be included, but the structure allows for inclusion with suppression of identifying information.
 
 <br>
 
