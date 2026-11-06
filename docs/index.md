@@ -2,8 +2,12 @@
 
 Welcome to the US Disease Tracker Data Standards site. This repository houses the data standards, templates, examples, and validation documentation for the US Disease Tracker project.
 
-??? info "Version 2.0.3 (updated 2026-10-06)"
+??? info "Version 2.0.4 (updated 2026-11-06)"
     
+    - Clarified required age-group, sub-jurisdiction, and meningococcal serogroup stratifications, including count consistency and reporting counts as `unspecified` when needed
+    - Clarified geographic unit rules, including `geo_unit = "NA"` for international residents only, and expanded disease subtype guidance and valid meningococcal serogroups
+
+    (Version 2.0.3)
     - Removed the jurisdiction geography CSV example as part of the transition to a single jurisdiction metadata file in YAML format
 
     (Changed in Version 2.0.2)

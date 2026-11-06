@@ -5,8 +5,12 @@ permalink: /docs/data-technical-specs/
 
 # Data Technical Specifications
 
-??? info "**Version 2.0.3** (updated 2026-10-06)"
+??? info "**Version 2.0.4** (updated 2026-11-06)"
 
+    - Clarified required age-group, sub-jurisdiction, and meningococcal serogroup stratifications, including count consistency and reporting counts as `unspecified` when needed
+    - Clarified geographic unit rules, including `geo_unit = "NA"` for international residents only, and expanded disease subtype guidance and valid meningococcal serogroups
+
+    (Version 2.0.3)
     - Removed the jurisdiction geography CSV example as part of the transition to a single jurisdiction metadata file in YAML format
 
     (Version 2.0.2)
@@ -316,6 +320,7 @@ Jurisdictions should provide accompanying metadata using the [Jurisdiction Repor
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 2.0.4 | 2026-11-06 | Clarified required data stratifications and count handling, geographic unit rules, and disease subtype guidance |
 | 2.0.3 | 2026-10-06 | Removed the jurisdiction geography CSV example as part of the transition to a single jurisdiction metadata file in YAML format |
 | 2.0.2 | 2026-08-04 | Updated repository/site references and links to use the DataStandards GitHub Pages path and renamed `USDiseaseTracker-Docs` references to US Disease Tracker Data Standards |
 | 2.0.0 | 2026-05-18 | Expanded supported diseases and updated documentation/tool guidance for disease-specific value rules |
