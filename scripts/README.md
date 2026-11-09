@@ -155,3 +155,46 @@ Data Dictionary CSV + Markdown Documentation
 ```
 
 **Pydantic model is the ultimate source of truth.** All other files are derived from it.
+
+## generate_data_standards_tool.py
+
+This script generates the Data Standards Tool documentation page (`docs/data-standards-tool.md`) from the JSON schema.
+
+**Usage:**
+
+```bash
+python3 scripts/generate_data_standards_tool.py
+```
+
+**What it does:**
+
+- Reads `examples-and-templates/data_reporting_schema.json`
+- Extracts field definitions, enumerations, and descriptions
+- Generates Markdown documentation with:
+  - Field reference with all valid values
+  - Disease-specific requirements
+  - Validation rules (including those not in the schema)
+  - Related resources
+- Outputs to `docs/data-standards-tool.md`
+
+**When to run:**
+
+Run this script whenever the JSON schema is updated to regenerate the documentation:
+
+```bash
+python3 scripts/generate_data_standards_tool.py
+git add docs/data-standards-tool.md
+git commit -m "Update data standards tool from schema"
+```
+
+**Validation Rules Included:**
+
+The script includes validation rules from both the schema and additional business rules:
+
+- MMWR week validation (Sunday start, Saturday end)
+- State-level totals (cannot have both age_group and disease_subtype as "total")
+- International resident geo_unit validation
+- NA value usage restrictions
+- Jurisdiction consistency checks
+- Date range validation
+- Count non-negativity
