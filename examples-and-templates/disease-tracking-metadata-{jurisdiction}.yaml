@@ -40,6 +40,15 @@ reported_diseases:
   notes: >
     Add any additional notes regarding reported diseases
 
+# Non-reportable Diseases
+#   List any of the requested diseases that are non-reportable by the jurisdiction
+nonreportable_diseases:
+  diseases:
+    - varicella
+
+  notes: >
+    Add any additional notes regarding non-reportable diseases
+
 # Substate Jurisdictions
 #   List all substate jurisdiction names and counties/planning regions/other defined geographic areas
 #   that map to each substate jurisdiction. In the case of each substate jurisdiction being a county, the
